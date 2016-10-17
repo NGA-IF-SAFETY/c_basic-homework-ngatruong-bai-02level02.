@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+ int main()
+{
+ int n,i,dem=0;
+do
+{
+ printf("nhap n.\n");
+
+ scanf("%d",&n);
+  if (n<0)
+  {
+  printf("vui long hap n>0 \n");
+  }
+  }while(n<0);
+   if (0<n<2)
+  {
+   printf("%d khong la so nguyen to \n",n);
+   }
+  else {
+  for(i=2;i<=sqrt(n);i++);
+  if (n%i==0);
+  dem++;
+  if(dem==0){
+  printf("%d la so nguyen to. \n",n);
+  }
+  else
+  printf("%d khong la so nguyen to \n",n);
+  }
+}
