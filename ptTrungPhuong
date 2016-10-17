@@ -1,0 +1,126 @@
+#include <stdio.h>
+void main()
+
+{
+
+    float a,b,c,delta,t1,t2,x1,x2,x3,x4;
+
+    printf("nhap a: ");
+
+    scanf("%f",&a);
+
+    printf("nhap b: ");
+
+    scanf("%f",&b);
+
+    printf("nhap c: ");
+
+    scanf("%f",&c);
+
+    delta=b*b-(4*a*c);
+
+    if (delta<0)
+
+    {
+
+        printf("phuong trinh da cho vo nghiem \n");
+
+    }
+
+    else
+
+    {
+
+        if (delta==0)
+
+       {
+
+            t1=-b/2*a;
+
+            t2=t1;
+
+            if (t1<0 && t2<0)
+
+            {
+
+                printf("phuong trinh da cho vo nghiem\n");
+
+            }
+
+            else
+
+            {
+
+                if (t1>=0)
+
+            {
+
+                x1=sqrt(t1);
+
+                x2=-x1;
+
+                printf("phuong trinh da cho co hai nghiem x1=%0.3f, x2=%0.3f\n",x1,x2);
+
+            }
+
+              else if(t2>=0)
+
+               {
+
+                x3=sqrt(t2);
+
+                x4=-x3;
+
+                printf("phuong trinh da cho co bon nghiem x3=%0.1f, x4=%0.1f\n",x3,x4);
+
+               }
+
+            }
+
+           }
+
+         else if (delta>0)
+
+         {
+
+             t1=(-b+sqrt(d))/2*a;
+
+             t2=(-b-sqrt(d))/2*a;
+
+             if (t1<0 && t2<0)
+
+             {
+
+                 printf("phuong trinh da cho vo nghiem 3!\n");
+
+             }
+
+             else if (t1>=0)
+
+             {
+
+                 x1=+sqrt(t1);
+
+                 x2=-x1;
+
+                 printf("phuong trinh da cho co hai nghiem x1=%0.1f, x2=%0.1f\n",x1,x2);
+
+             }
+
+             else if (t2>=0);
+
+             {
+
+                 x3=+sqrt(t2);
+
+                 x4=-x3;
+
+                 printf("phuong trinh da cho co hai nghiem x3=%0.1f, x4=%0.1f\n",x3,x4);
+
+             }
+
+         }
+
+    }
+
+}
