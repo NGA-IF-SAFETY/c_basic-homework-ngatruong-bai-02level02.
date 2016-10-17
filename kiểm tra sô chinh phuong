@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include <math.h>
+void main()
+{
+    int  n;
+ double i;
+    printf ("nhap so nguyen duong n :");
+    scanf("%d", &n);
+ i = sqrt(n);
+    if (n == i*i)
+        printf ("la so chinh phuong");
+    else
+        printf ("ko phai so chinh phuong");
+}
