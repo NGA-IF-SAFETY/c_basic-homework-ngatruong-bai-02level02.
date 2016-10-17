@@ -1,0 +1,61 @@
+#include<stdio.h>
+
+void main()
+
+{
+  float a,b,c,delta;
+  
+  printf("nhap gia tri cua a: \n");
+  
+  scanf("%f",&a);
+  
+  printf("nhap gia tri cua b: \n");
+  
+  scanf("%f",&b);
+  
+  printf("nhap gia tri cua c: \n");
+  
+  scanf("%f",&c);
+  
+ if(a==0)
+
+{
+
+    if(b!=0)
+
+        printf("Pt co nghiem la:%f",-c/b);
+
+    else if(c==0)
+
+            printf("Pt co vo so nghiem");
+
+        else
+
+            printf("Pt vo nghiem");
+
+
+}
+
+else
+
+{
+
+    delta=b*b-4*a*c;
+
+    if(delta==0)
+
+    {
+
+        printf("Pt co nghiem kep:%0.3f",-b/(2*a));
+
+    }
+
+    else if(delta>0)
+
+            printf("Pt co 2 nghiem phan biet x1=%f\tx2=%f",(-b-sqrt(delta))/(2*a),(-b+sqrt(delta))/(2*a));
+
+        else
+
+            printf("Pt vo nghiem");
+
+}
